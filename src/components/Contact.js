@@ -1,5 +1,10 @@
+import { useState } from "react";
+
 export const Contact = () => {
-  return (
+  const formInitialDetails = {
     
+  }
+  return (
+
   )
 }
