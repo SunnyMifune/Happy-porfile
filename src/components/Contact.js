@@ -15,7 +15,9 @@ export const Contact = () => {
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
 
-  const onFormUpdate = (category, value) =>
+  const onFormUpdate = (category, value) => {
+    return
+  }
 
   return (
     <section className="contact" id="connect">
