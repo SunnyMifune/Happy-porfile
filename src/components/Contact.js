@@ -16,7 +16,10 @@ export const Contact = () => {
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
-    return
+    setFormDetails({
+      ...formDetails,
+      [category]: value
+    })
   }
 
   return (
