@@ -22,10 +22,10 @@ export const Contact = () => {
     })
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
 
   }
-  
+
   return (
     <section className="contact" id="connect">
       <Container>
