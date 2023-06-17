@@ -1,12 +1,22 @@
 import { Alert } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-export const Newsletter = ({ subscribe, status, message }) => {
+export const Newsletter = ({ onValidated, status, message }) => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = () => {
-
+    e.preventDefault();
+    email &&
+    email.indexOf("@") > -1 &&
+    onValidated({
+      EMAIL: email
+    })
   }
+
+  const clearFields = () => {
+    setEmail('');
+  }
+  
   return (
     <Col lg={12}>
       <div className="newsletter-bx">
