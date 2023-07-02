@@ -145,3 +145,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
+.new-email-bx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #aa367C -5.91%, #4a2f8d 111.58%);
+  border-radius: 20px;
+  position: relative;
+}
