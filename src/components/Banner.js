@@ -4,6 +4,7 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import { isVisible } from "@testing-library/user-event/dist/utils";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -48,7 +49,7 @@ export const Banner = () => {
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
           <TrackVisibility>
-          <div>
+          <div className={isVisible ? "animated_animated animate_fadeIn" : ""}>
             <span className="tagline">Welcome to my Page</span>
             <h1>{'Hi I am Happy'}</h1>
             <p>have a lovely family</p>
